@@ -33,6 +33,7 @@ table {
 
 h1{
     text-align: center;
+    cursor: pointer;
 }
 .fsizeboldness {
     font-weight: bold;
