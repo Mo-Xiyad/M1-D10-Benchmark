@@ -1,11 +1,5 @@
 
 /* ---------This is a part of the first HTML Exe--------- */
-table {
-    align-items: center;
-    font-family: arial, sans-serif;
-    width: 50%;
-}
-
 td,
 th {
     border: 1px solid #dddddd; /* this could be removed and user the (boarderclass) */
@@ -49,4 +43,9 @@ a{
 
 .borderclass{
     border: 2px solid #03628883
+}
+
+table {
+    width: 50%;
+    border-radius: 5px;
 }
