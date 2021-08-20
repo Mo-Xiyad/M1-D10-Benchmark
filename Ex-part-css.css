@@ -30,9 +30,6 @@ div>footer {
 /* CSS Part Starts Here */
 /*
 CSS EXERCISES
-
-        11) Give a maximum width to the body and center it in the page
-        13) Change the color of each link in the page
         14) Create a class with a border
         15) Set table to have rounded corners
         12) Set every h1 to be centered
@@ -45,4 +42,8 @@ CSS EXERCISES
 body{
     width: 100%;
     margin: 0;
+}
+
+a{
+    color:rgb(26, 119, 99);
 }
