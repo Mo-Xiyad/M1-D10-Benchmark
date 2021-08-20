@@ -1,7 +1,5 @@
 /*
 JS EXERCISES
-        
-        28) Create an array of arrays, in which every array has 10 random numbers
         29) Create a function that gets 2 arrays and returns the longest one
         30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 */
@@ -52,3 +50,15 @@ const maxNumberOfTheArray = function (array) {
 }
 
 maxNumberOfTheArray(array)
+
+// 28) Create an array of arrays, in which every array has 10 random numbers
+
+let arrayOfArrays = Array(3).fill().map
+    (
+        () => Array(10).fill().map
+            (
+                () => Math.floor(Math.random() * 10)
+            )
+    );
+
+console.log(arrayOfArrays)
