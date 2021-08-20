@@ -1,6 +1,5 @@
 /*
-DOM
-        38) Console log "Page loaded" when the page is correctly loaded
+DOM        
         39) Write a function to add new items to a UL
         40) Write a function to empty a list
 */
@@ -55,10 +54,15 @@ const addRedLink = function () {
     }
 }
 
+// 38) Console log "Page loaded" when the page is correctly loaded
 
+const pageLoaded = function () {
+    console.log("YOUR PAGE HAS BEEN FULLY LOADED NOW")
+}
 
 
 window.onload = function () {
     // addClassToAllRow()
     // addRedLink()
+    pageLoaded()
 }
