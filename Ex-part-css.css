@@ -24,7 +24,6 @@ div>footer {
 /* CSS Part Starts Here */
 /*
 CSS EXERCISES
-        15) Set table to have rounded corners
         12) Set every h1 to be centered
         17) Create a class which change font size and boldness
         18) Create a class to hide a content
@@ -48,4 +47,8 @@ a{
 table {
     width: 50%;
     border-radius: 5px;
+}
+
+h1{
+    text-align: center;
 }
