@@ -1,10 +1,5 @@
 
 /* ---------This is a part of the first HTML Exe--------- */
-
-th {
-    background-color: #dddddd;
-}
-
 div>footer {
     text-align: center;
     bottom: auto;
@@ -14,15 +9,7 @@ div>footer {
 }
 /* ---------END--------- */
 
-
-/* CSS Part Starts Here */
-/*
-CSS EXERCISES
-        
-        
-        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) 
-        
-*/
+/*CSS EXERCISES*/
 body {
     width: 100%;
     margin: 0;
@@ -79,3 +66,6 @@ th {
     padding: 8px;
 }
 
+tr th{
+    border: 10px dotted #d61919;
+}
