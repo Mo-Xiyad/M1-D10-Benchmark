@@ -1,8 +1,4 @@
-/*
-JS EXERCISES
-        
-        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
-*/
+/*   -----------------   JS EXERCISES   -----------------*/
 
 let x = "John"
 let y = "Doe"
@@ -74,3 +70,23 @@ const longetsArray = function (array1, array2) {
 }
 
 console.log(longetsArray(arrayWithStrings, arrayOfArrays))
+
+// 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+let bigNumberArray = [10, 10, 10, 10, 10, 5000]
+let smallNumberArray = [100, 10, 10, 10, 10, 10]
+
+const sumOfArray = function (array1, array2) {
+    let sum1 = 0
+    let sum2 = 0
+    for (let i = 0; i < array1.length; i++) {
+        sum1 += array1[i]
+        console.log(array1[i])
+    }
+    for (let i = 0; i < array2.length; i++) {
+        sum2 += array2[i]
+        console.log(array2[i])
+    }
+    return sum1 > sum2 ? array1 : array2
+}
+console.log(sumOfArray(bigNumberArray, smallNumberArray))
