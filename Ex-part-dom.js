@@ -1,9 +1,5 @@
 /*
 DOM
-
-
-
-        33) Create a cycle that prints the text inside every td of the page
         34) Write a function to change the heading of the page
         35) Write a function to add an extra row to the table
         36) Write a function to add the class "test" to each row in the table
@@ -20,3 +16,12 @@ let containerWithId = document.getElementById('container')
 // 32) Get every "td" from the page
 
 let allTds = document.getElementsByTagName('td')
+
+// 33) Create a cycle that prints the text inside every td of the page
+
+const getInnerText = function () {
+    for (let i = 0; i < allTds.length; i++) {
+        console.log(allTds[i].innerText)
+    }
+}
+// getInnerText()
