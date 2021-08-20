@@ -1,7 +1,4 @@
-/*
-DOM        
-        40) Write a function to empty a list
-*/
+/*        DOM                */
 
 // 31) Get element with ID "container" from the page
 
@@ -68,7 +65,12 @@ const addNewli = function () {
     getUls.appendChild(createNewLi)
 }
 
+// 40) Write a function to empty a list
 
+const removeList = function () {
+    let list = document.getElementById("unorderedList")
+    list.remove()
+}
 
 
 window.onload = function () {
