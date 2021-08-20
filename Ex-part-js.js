@@ -1,6 +1,6 @@
 /*
 JS EXERCISES
-        27) Wrote a function to get the MAX and the MIN from the previously created array
+        
         28) Create an array of arrays, in which every array has 10 random numbers
         29) Create a function that gets 2 arrays and returns the longest one
         30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
@@ -43,3 +43,12 @@ let array = []
 for (let i = 0; i < 100; i++) {
     array.push(Math.floor(Math.random() * 99 + 1))
 }
+
+// 27) Wrote a function to get the MAX and the MIN from the previously created array
+
+const maxNumberOfTheArray = function (array) {
+    console.log(Math.max(...array));
+    console.log(Math.min(...array));
+}
+
+maxNumberOfTheArray(array)
