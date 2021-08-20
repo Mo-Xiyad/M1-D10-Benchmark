@@ -8,7 +8,7 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #dddddd; /* this could be removed and user the (boarderclass) */
     text-align: left;
     padding: 8px;
 }
@@ -30,7 +30,6 @@ div>footer {
 /* CSS Part Starts Here */
 /*
 CSS EXERCISES
-        14) Create a class with a border
         15) Set table to have rounded corners
         12) Set every h1 to be centered
         17) Create a class which change font size and boldness
@@ -46,4 +45,8 @@ body{
 
 a{
     color:rgb(26, 119, 99);
+}
+
+.borderclass{
+    border: 2px solid #03628883
 }
