@@ -1,6 +1,5 @@
 /*
 DOM        
-        39) Write a function to add new items to a UL
         40) Write a function to empty a list
 */
 
@@ -59,6 +58,17 @@ const addRedLink = function () {
 const pageLoaded = function () {
     console.log("YOUR PAGE HAS BEEN FULLY LOADED NOW")
 }
+
+// 39) Write a function to add new items to a UL
+
+const addNewli = function () {
+    let getUls = document.getElementById("unorderedList")
+    let createNewLi = document.createElement('li')
+    createNewLi.innerHTML = 'New list Item'
+    getUls.appendChild(createNewLi)
+}
+
+
 
 
 window.onload = function () {
