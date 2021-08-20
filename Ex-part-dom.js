@@ -1,7 +1,7 @@
 /*
 DOM
         
-        35) Write a function to add an extra row to the table
+        
         36) Write a function to add the class "test" to each row in the table
         37) Write a function to add a red background to every link in the page
         38) Console log "Page loaded" when the page is correctly loaded
@@ -32,6 +32,18 @@ const changeHeader = function () {
     let head = document.getElementsByTagName('h1')
     head[0].innerHTML = 'I have been changed'
 }
+
+// 35) Write a function to add an extra row to the table
+
+const addNewRow = function () {
+    let table = document.getElementById('table')
+    let createTR = document.createElement('tr')
+    createTR.innerHTML = 'Newly created <tr>'
+    table.appendChild(createTR)
+}
+
+
+
 
 
 window.onload = function () {
