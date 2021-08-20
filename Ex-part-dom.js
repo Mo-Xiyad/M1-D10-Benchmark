@@ -1,9 +1,5 @@
 /*
 DOM
-        
-        
-
-        37) Write a function to add a red background to every link in the page
         38) Console log "Page loaded" when the page is correctly loaded
         39) Write a function to add new items to a UL
         40) Write a function to empty a list
@@ -50,8 +46,19 @@ const addClassToAllRow = function () {
     }
 }
 
+// 37) Write a function to add a red background to every link in the page
+
+const addRedLink = function () {
+    let allLinks = document.getElementsByTagName('a')
+    for (links of allLinks) {
+        links.style.backgroundColor = "red"
+    }
+}
+
+
 
 
 window.onload = function () {
     // addClassToAllRow()
+    // addRedLink()
 }
