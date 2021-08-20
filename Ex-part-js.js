@@ -1,7 +1,7 @@
 /*
 JS EXERCISES
 
-        23) Delete Email from the previously created object
+        
         24) Create an array with 10 strings in it
         25) Print in the console every string in the previous array
         26) Create an array with 100 random numbers in it
@@ -21,3 +21,7 @@ let objectOne = {
     surname: 'Mo',
     email: 'mozee@example.com'
 }
+
+// 23) Delete Email from the previously created object
+
+delete objectOne.email
