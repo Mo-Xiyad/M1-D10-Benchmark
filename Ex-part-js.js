@@ -1,6 +1,6 @@
 /*
 JS EXERCISES
-        29) Create a function that gets 2 arrays and returns the longest one
+        
         30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 */
 
@@ -21,11 +21,11 @@ delete objectOne.email
 
 // 24) Create an array with 10 strings in it
 
-let arrayOne = ['one', 'tree', 'water', 'fire', 'bubble', 'game', 'cat', 'dog', 'john', 'marry']
+let arrayWithStrings = ['one', 'tree', 'water', 'fire', 'bubble', 'game', 'cat', 'dog', 'john', 'marry']
 
 // 25) Print in the console every string in the previous array
 
-console.log(arrayOne)
+console.log(arrayWithStrings)
 
 // 26) Create an array with 100 random numbers in it
 
@@ -37,19 +37,19 @@ console.log(arrayOne)
 //     return array
 // }
 
-let array = []
+let arrayWithRandom100 = []
 for (let i = 0; i < 100; i++) {
-    array.push(Math.floor(Math.random() * 99 + 1))
+    arrayWithRandom100.push(Math.floor(Math.random() * 99 + 1))
 }
 
 // 27) Wrote a function to get the MAX and the MIN from the previously created array
 
 const maxNumberOfTheArray = function (array) {
-    console.log(Math.max(...array));
-    console.log(Math.min(...array));
+    console.log(Math.max(...arrayWithRandom100));
+    console.log(Math.min(...arrayWithRandom100));
 }
 
-maxNumberOfTheArray(array)
+maxNumberOfTheArray(arrayWithRandom100)
 
 // 28) Create an array of arrays, in which every array has 10 random numbers
 
@@ -62,3 +62,15 @@ let arrayOfArrays = Array(3).fill().map
     );
 
 console.log(arrayOfArrays)
+
+// 29) Create a function that gets 2 arrays and returns the longest one
+
+const longetsArray = function (array1, array2) {
+    if (array2.length < array1.length) {
+        return array1
+    } else {
+        return array2
+    }
+}
+
+console.log(longetsArray(arrayWithStrings, arrayOfArrays))
