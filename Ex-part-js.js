@@ -90,3 +90,5 @@ const sumOfArray = function (array1, array2) {
     return sum1 > sum2 ? array1 : array2
 }
 console.log(sumOfArray(bigNumberArray, smallNumberArray))
+
+console.log(`-----------------------> EX DOM STARTS HERE <-----------------------`)
