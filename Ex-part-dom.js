@@ -2,7 +2,7 @@
 DOM
 
 
-        32) Get every "td" from the page
+
         33) Create a cycle that prints the text inside every td of the page
         34) Write a function to change the heading of the page
         35) Write a function to add an extra row to the table
@@ -15,4 +15,8 @@ DOM
 
 // 31) Get element with ID "container" from the page
 
-let container = document.getElementById('container')
+let containerWithId = document.getElementById('container')
+
+// 32) Get every "td" from the page
+
+let allTds = document.getElementsByTagName('td')
