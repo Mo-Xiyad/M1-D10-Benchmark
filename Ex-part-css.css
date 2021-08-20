@@ -1,11 +1,5 @@
 
 /* ---------This is a part of the first HTML Exe--------- */
-td,
-th {
-    border: 1px solid #dddddd; /* this could be removed and user the (boarderclass) */
-    text-align: left;
-    padding: 8px;
-}
 
 th {
     background-color: #dddddd;
@@ -25,14 +19,17 @@ div>footer {
 /*
 CSS EXERCISES
         
-        19) Add a green border to each td
+        
         20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) 
-        16) Add margin between every paragraph
+        
 */
-body{
+body {
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(195, 207, 206);
 }
+  
 
 a{
     color:rgb(26, 119, 99);
@@ -55,15 +52,10 @@ h1{
     font-size:larger;
 }
 
-body {
-  font-family: sans-serif;
-  font-size: 100%;
-  color: #222;
-  background-color: #fff;
-}
 
 p {
-  text-align: center;
+    margin: 20px;
+    text-align: center;
 }
 
 .hide-item:hover,
@@ -79,3 +71,11 @@ p {
   margin: 0.2em;
   background-color: #ccc;
 }
+
+td,
+th {
+    border: 1px solid #31ff3b;
+    text-align: center;
+    padding: 8px;
+}
+
