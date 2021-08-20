@@ -2,7 +2,7 @@
 DOM
         
         
-        36) Write a function to add the class "test" to each row in the table
+
         37) Write a function to add a red background to every link in the page
         38) Console log "Page loaded" when the page is correctly loaded
         39) Write a function to add new items to a UL
@@ -42,10 +42,16 @@ const addNewRow = function () {
     table.appendChild(createTR)
 }
 
-
+// 36) Write a function to add the class "test" to each row in the table
+const addClassToAllRow = function () {
+    let getAllRow = document.getElementsByTagName('tr')
+    for (let i = 0; i < getAllRow.length; i++) {
+        getAllRow[i].classList.add("test")
+    }
+}
 
 
 
 window.onload = function () {
-
+    // addClassToAllRow()
 }

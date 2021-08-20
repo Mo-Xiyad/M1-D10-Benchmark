@@ -70,3 +70,7 @@ th {
 tr th{
     border: 10px dotted #d61919;
 }
+
+.test{
+    background-color:rgb(216, 116, 247);
+}
