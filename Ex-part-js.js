@@ -26,6 +26,20 @@ delete objectOne.email
 let arrayOne = ['one', 'tree', 'water', 'fire', 'bubble', 'game', 'cat', 'dog', 'john', 'marry']
 
 // 25) Print in the console every string in the previous array
+
 console.log(arrayOne)
 
 // 26) Create an array with 100 random numbers in it
+
+// const arrayWithnumbers = function () {
+//     let array = []
+//     for (let i = 0; i < 100; i++) {
+//         array.push(Math.floor(Math.random() * 99 + 1))
+//     }
+//     return array
+// }
+
+let array = []
+for (let i = 0; i < 100; i++) {
+    array.push(Math.floor(Math.random() * 99 + 1))
+}
