@@ -1,0 +1,48 @@
+
+/* ---------This is a part of the first HTML Exe--------- */
+table {
+    align-items: center;
+    font-family: arial, sans-serif;
+    width: 50%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #dddddd;
+}
+
+div>footer {
+    text-align: center;
+    bottom: auto;
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+}
+/* ---------END--------- */
+
+
+/* CSS Part Starts Here */
+/*
+CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        12) Set every h1 to be centered
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) 
+        16) Add margin between every paragraph
+*/
+body{
+    width: 100%;
+    margin: 0;
+}
