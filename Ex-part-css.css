@@ -78,3 +78,8 @@ tr th{
 hr{
     background-color: rgb(155, 4, 4);
 }
+
+.alert{
+    background-color:rgb(83, 81, 116);
+    color: red;
+}

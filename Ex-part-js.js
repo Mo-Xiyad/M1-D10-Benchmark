@@ -17,11 +17,18 @@ delete objectOne.email
 
 // 24) Create an array with 10 strings in it
 
-let arrayWithStrings = ['one', 'tree', 'water', 'fire', 'bubble', 'game', 'cat', 'dog', 'john', 'marry']
+let arrayWithStrings = []
+
+for (let i = 0; i < 10; i++) {
+    arrayWithStrings.push('New value:' + i)
+}
+console.log(arrayWithStrings)
 
 // 25) Print in the console every string in the previous array
+for (string of arrayWithStrings) {
+    console.log(string)
+}
 
-console.log(arrayWithStrings)
 
 // 26) Create an array with 100 random numbers in it
 
@@ -92,3 +99,15 @@ const sumOfArray = function (array1, array2) {
 console.log(sumOfArray(bigNumberArray, smallNumberArray))
 
 console.log(`-----------------------> EX DOM STARTS HERE <-----------------------`)
+
+const aa = function () {
+    let supeer = []
+
+    for (let i = 0; i < 4; i++) {
+        let sub = []
+        for (let j = 0; j < 10; j++) {
+            let r = Math.floor(Math.random() * 10)
+            sub.push(supeer)
+        }
+    }
+}
