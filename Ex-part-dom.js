@@ -6,33 +6,53 @@ let containerWithId = document.getElementById('container')
 
 // 32) Get every "td" from the page
 
-let allTds = document.getElementsByTagName('td')
+// let allTds = document.getElementsByTagName('td')
+let allTds = document.querySelectorAll('td')
 
+
+/*
 // 33) Create a cycle that prints the text inside every td of the page
-
+========= OPTION ONE
+*/
 const getInnerText = function () {
     for (let i = 0; i < allTds.length; i++) {
-        console.log(allTds[i].innerText)
+        console.log(allTds[i].innerText = 'NEW TEXT')
     }
 }
 // getInnerText()
 
+
+
+// --------- OPTIN TWO
+
+// allTds.forEach((td) => {
+//     td.innerText = "NEW TEXT"
+// })
+
 // 34) Write a function to change the heading of the page
-const changeHeader = function (event) {
-    let head = document.getElementsByTagName('h1')
-    head[0].innerHTML = 'I have been changed'
-    // let modifyText = 'I have been changed'
-    // head.addEventListener("click", modifyText, false);
+const changeHeader = function (newheader) {
+    let header = document.querySelector('h1')
+    header.innerHTML = "NEW HEADING"
+
+    // header.innerHTML = newheader // ===>  YOu can accept and arrgument and make that as the new header
 }
+// changeHeader("helllooooooo")
 
 // 35) Write a function to add an extra row to the table
 
 const addNewRow = function () {
-    let table = document.getElementById('table')
+    let tbody = document.querySelector('tbody')
     let createTR = document.createElement('tr')
-    createTR.innerHTML = 'Newly created <tr>'
-    table.appendChild(createTR)
+
+    for (let i = 0; i < 4; i++) {
+        let createTd = document.createElement('td')
+        createTd.innerHTML = i + 1
+        //        createTd.innerHTML = "NEW"
+        createTR.appendChild(createTd)
+    }
+    tbody.appendChild(createTR)
 }
+
 
 // 36) Write a function to add the class "test" to each row in the table
 const addClassToAllRow = function () {
@@ -42,25 +62,36 @@ const addClassToAllRow = function () {
     }
 }
 
-// 37) Write a function to add a red background to every link in the page
 
+// 37) Write a function to add a red background to every link in the page
 const addRedLink = function () {
+    /* ========>   OPTION ONE
+    
     let allLinks = document.getElementsByTagName('a')
     let texttt = 'Hellooo'
     for (links of allLinks) {
         links.style.backgroundColor = "red"
     }
 
+    */
+
+    let getLinks = document.querySelectorAll('a')
+
+    getLinks.forEach((links) => {
+        links.style.backgroundColor = "red"
+    })
+
 }
 
-// 38) Console log "Page loaded" when the page is correctly loaded
 
+// 38) Console log "Page loaded" when the page is correctly loaded
 const pageLoaded = function () {
     console.log("YOUR PAGE HAS BEEN FULLY LOADED NOW")
 }
 
-// 39) Write a function to add new items to a UL
 
+
+// 39) Write a function to add new items to a UL
 const addNewli = function () {
     let getUls = document.getElementById("unorderedList")
     let createNewLi = document.createElement('li')
@@ -68,11 +99,13 @@ const addNewli = function () {
     getUls.appendChild(createNewLi)
 }
 
-// 40) Write a function to empty a list
 
+
+// 40) Write a function to empty a list
 const removeList = function () {
     let list = document.getElementById("unorderedList")
-    list.remove()
+    // list.remove() 
+    list.innerText = ""
 }
 
 
@@ -93,8 +126,10 @@ EXTRA
 */
 
 // 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
-
-
+let link = document.querySelector('a')
+link.onmouseover = function (e) {
+    alert(`This is a link:  ${e.target.href}`)
+}
 
 
 window.onload = function () {
