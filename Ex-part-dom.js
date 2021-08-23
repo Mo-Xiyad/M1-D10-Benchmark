@@ -113,8 +113,6 @@ const removeList = function () {
 /*
 EXTRA 
 
-        42) Add a button to hide every image on the page
-        43) Add a button to hide and show the table from the page
         44) Write a function to sum every number inside the TD (if the content is numeric)
         45) Delete the last letter from the title each time the user clicks on it
         46) Change a single TD background color when the user clicks on it
@@ -126,14 +124,57 @@ EXTRA
 */
 
 // 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
-let link = document.querySelector('a')
-link.onmouseover = function (e) {
-    alert(`This is a link:  ${e.target.href}`)
+// let link = document.querySelector('a')
+// link.onmouseover = function (e) {
+//     alert(`This is a link:  ${e.target.href}`)
+// }
+
+const alertLink = function (){
+    let links = document.querySelectorAll("a")
+    
+    for (let i=0; i< links.length; i++){
+        
+        links[i].addEventListener("mouseover", function(event){
+            // alert("hellow")
+            alert(links[i].getAttribute("href"))
+        })
+    }
 }
+// window.onload = alertLink
+
+// 42) Add a button to hide every image on the page
+let hideBtn = document.querySelector("#hide")
+let img = document.querySelectorAll("img")
+
+hideBtn.onclick = function (e) {
+    for (let i = 0; i < img.length; i++){
+        img[i].style.display = "none"
+    }
+}
+
+// 43) Add a button to hide and show the table from the page
+
+// hideBtn.ondblclick = function (e) {
+//     for (let i = 0; i < img.length; i++){
+//         img[i].style.display = "block"
+//     }
+// }
+
+let showBtn = document.querySelector("#show")
+
+showBtn.onclick = function (e){
+        for (let i = 0; i < img.length; i++){
+        img[i].style.display = "block"
+    }
+}
+
+// 44) Write a function to sum every number inside the TD (if the content is numeric)
+// let tablecols = document.querySelectorAll("tr td")
 
 
 window.onload = function () {
     // addClassToAllRow()
     // addRedLink()
+    alertLink()
     pageLoaded()
 }
